@@ -38,10 +38,10 @@ class Solution {
                     tmp.add(nums[end]);
                     res.add(tmp);
                     //remove duplicates for 2nd and 3rd elements
-                    while(nums[start] == nums[start+1]){
+                    while(start<end && nums[start] == nums[start+1]){
                         start++;
                     }
-                    while(nums[end]==nums[end-1]){
+                    while(start<end && nums[end]==nums[end-1]){
                         end--;
                     }
                     start++;

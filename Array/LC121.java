@@ -18,11 +18,11 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.*/
 
 class Solution {
     public int maxProfit(int[] prices) {
-        int min = prices[0];
-        int max = 0;
         if(prices== null || prices.length == 0){
         	return 0;
         }
+        int min = prices[0];
+        int max = 0;
         for(int price : prices){
         	if(price < min){
         		min = price;
