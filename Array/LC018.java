@@ -32,7 +32,7 @@ class Solution {
         		while(start < end){
         			if(nums[i]+nums[j]+nums[start]+nums[end]<target){
         				start++;
-        			}else if(nums[i]+nums[j]+nums[start]+nums[end]<target){
+        			}else if(nums[i]+nums[j]+nums[start]+nums[end]>target){
         				end--;
         			}else{
         				ArrayList<Integer> tmp = new ArrayList<>();
